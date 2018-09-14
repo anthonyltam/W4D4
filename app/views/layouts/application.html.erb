@@ -11,6 +11,7 @@
 
   <body>
     <%= yield %>
+    
   <% if logged_in? %>
     <p>Hello, <%= current_user.email %> </p>
     <form action='<%= session_url %>' method="post">

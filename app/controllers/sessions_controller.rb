@@ -23,6 +23,7 @@ class SessionsController < ApplicationController
   #logout
   def destroy
     logout!
+    # current_user = nil
     p 'logged out'
     render :new
   end
